@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 06</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập 1 chuỗi");
+    let str = [];
+    str = myFunction(a);
+    let result="";
+    for (let i = 0; i<str.length;i++){
+        if (str[i]==="-"){
+            str[i] = "_";
+        }
+        result += str[i];
+    }
+    document.write(result);
+
+    function myFunction(array) {
+        let string1 = array.split('');
+        return string1;
+    }
+</script>
+</body>
+</html>
